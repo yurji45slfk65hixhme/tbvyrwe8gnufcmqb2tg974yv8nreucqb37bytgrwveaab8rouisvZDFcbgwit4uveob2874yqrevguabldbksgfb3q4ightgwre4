@@ -69,7 +69,7 @@ function MainCommands(plr, msg)
     end
     end
     
-    if msg == "k" then
+    if msg == "e" then
     local args = {
     [1] = game:GetService("Players"):WaitForChild("JoeGG200")
 }
@@ -124,7 +124,7 @@ end
 
 end)
 
-    if msg == "a" then
+    if msg == "w" then
 local args = {
     [1] = 1
 }
