@@ -16,11 +16,11 @@ local data = {
 						["type"] = "rich",
 						["color"]= tonumber(0x0),
 						["footer"] = {
-							["icon_url"] = 'https://cdn.discordapp.com/attachments/1270607826602950689/1270612920119595099/image.png?ex=66b455ff&is=66b3047f&hm=2f8263e786a81f432937806d0c4ebc8ff63416022304606de281dcfe74c2e878&',
+							["icon_url"] = 'https://cdn.discordapp.com/attachments/1270607826602950689/1270613813036843038/image.png?ex=66b456d3&is=66b30553&hm=78dce50586ce858c858c0c5fd30d873c61905da4fd4d8ae8fe437971747c3352&',
 							["text"] = game.JobId,
 						},
 						["thumbnail"] = {
-							["url"] = "https://cdn.discordapp.com/attachments/1269104775526350859/1269117575636451328/image.png?ex=66aee559&is=66ad93d9&hm=9f5aee3d7160f86895ebebaf233e4f499b64972b38ce60b582a6304954e2d258&",
+							["url"] = "https://cdn.discordapp.com/attachments/1270607826602950689/1270614156613259264/image.png?ex=66b45725&is=66b305a5&hm=2844db757547bcc70c3a56740e489cb29d95126743570ef8d2faf4f5edc5d955&",
 						},
 						["author"] = {
 							["name"] = game.Players.LocalPlayer.Name,
