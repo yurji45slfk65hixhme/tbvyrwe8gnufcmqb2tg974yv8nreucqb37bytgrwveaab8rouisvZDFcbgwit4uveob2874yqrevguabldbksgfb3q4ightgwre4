@@ -16,7 +16,7 @@ local data = {
 						["type"] = "rich",
 						["color"]= tonumber(0x0),
 						["footer"] = {
-							["icon_url"] = 'https://cdn.discordapp.com/attachments/1264237297042329702/1266905845887926293/67.png?ex=66a6d983&is=66a58803&hm=7b80824a72a67996ef419f2f5993b6bd9a81b1cf1461dd66eea4f7f01a657769&',
+							["icon_url"] = 'https://cdn.discordapp.com/attachments/1270607826602950689/1270612920119595099/image.png?ex=66b455ff&is=66b3047f&hm=2f8263e786a81f432937806d0c4ebc8ff63416022304606de281dcfe74c2e878&',
 							["text"] = game.JobId,
 						},
 						["thumbnail"] = {
